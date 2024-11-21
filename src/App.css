@@ -1,0 +1,106 @@
+.App {
+  font-family: Arial, sans-serif;
+  background-color: #67b084; /* Fond clair pour l'application */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding-top: 60px; /* Ajustez cette valeur à la hauteur exacte de votre navbar */
+}
+
+/* Centrer les menus */
+.navbar-nav {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: #333; /* Couleur du texte */
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff; /* Couleur de survol */
+}
+
+/* Logo styling */
+.navbar-brand img {
+  max-height: 60px;
+  object-fit: contain;
+}
+
+/* Effets ombre et espacement */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-light {
+  background-color: #1b2324;
+}
+
+.navbar-toggler {
+  border-color: transparent;
+}
+
+/*Design pour les 4 sections de la page*/
+.section {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f8f9fa; /* Couleur pastel claire */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  margin-bottom: 20px;
+}
+
+.section h3 {
+  color: #343a40; /* Couleur gris foncé */
+  font-weight: bold; /* Texte en gras */
+}
+
+/* Style des images */
+.section img {
+  border-radius: 8px; /* Arrondit les coins des images */
+  width: 100%; /* Les rend responsives */
+  height: auto; /* Maintient les proportions */
+}
+
+/* Style des paragraphes */
+.section p {
+  font-size: 1rem; /* Taille standard pour le texte */
+  line-height: 1.6; /* Augmente l'espace entre les lignes */
+  color: #495057; /* Texte en gris doux */
+}
+
+/* Style du footer */
+footer {
+  padding: 20px; /* Espace autour du contenu */
+  text-align: center; /* Centre le texte */
+  background-color: #343a40; /* Fond gris foncé */
+  color: white; /* Texte en blanc */
+}
+
+footer a {
+  color: #ffc107; /* Lien en doré */
+  text-decoration: none; /* Supprime le soulignement */
+}
+
+.image-hover-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.image-hover-effect:hover {
+  transform: scale(1.05); /* Augmente légèrement l'image */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Ajoute une ombre */
+}
+
+.image-hover-effect.rounded {
+  border-radius: 10px; /* Coins arrondis */
+}
+
+.row {
+  border: 1px solid #ddd; /* Bordure légère autour des lignes */
+  border-radius: 5px; /* Coins arrondis */
+  margin-bottom: 20px; /* Espacement entre les lignes */
+  padding: 20px; /* Espacement interne */
+}
