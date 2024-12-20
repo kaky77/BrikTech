@@ -1,50 +1,61 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import logo from "../images/logo.png";
-import "./styles/Navbar.css";
+// Importation des modules nécessaires
+import React from "react"; // Importation de React pour la création du composant.
+import { Link } from "react-router-dom"; // Importation du composant `Link` pour la navigation avec React Router.
+import Container from "react-bootstrap/Container"; // Conteneur de Bootstrap pour une mise en page responsive.
+import Nav from "react-bootstrap/Nav"; // Composant `Nav` de Bootstrap pour gérer les liens de navigation.
+import Navbar from "react-bootstrap/Navbar"; // Barre de navigation Bootstrap.
+import logo from "../images/logo.png"; // Importation du fichier d'image pour le logo.
+import "./styles/Navbar.css"; // Importation des styles personnalisés pour la barre de navigation.
 
 function BarreNavig() {
   return (
+    // Barre de navigation principale
     <Navbar
-      bg="light"
-      expand="lg"
-      className="py-3 border-bottom shadow-sm fixed-top"
+      bg="light" // Fond clair.
+      expand="lg" // Barre de navigation extensible en grand écran (large).
+      className="py-3 border-bottom shadow-sm fixed-top" // Classes CSS pour le padding, la bordure, l'ombre et un positionnement fixe en haut de la page.
     >
       <Container>
-        {/* Conteneur principal avec logo au centre */}
+        {/* Logo et nom du site */}
         <Navbar.Brand
-          as={Link}
-          to="/"
-          className="mx-auto d-flex justify-content-center align-items-center"
+          as={Link} // Utilisation de `Link` pour que le logo redirige vers la page d'accueil sans recharger la page.
+          to="/" // Lien vers la route racine "/".
+          className="mx-auto d-flex justify-content-center align-items-center" // Centrage du logo et du texte horizontalement et verticalement.
         >
           <img
-            src={logo}
-            alt="Logo"
-            style={{ height: "60px" }}
-            className="me-2"
+            src={logo} // Source de l'image pour le logo.
+            alt="Logo" // Texte alternatif pour l'image (accessibilité).
+            style={{ height: "60px" }} // Style inline pour définir une hauteur de 60px.
+            className="me-2" // Marges sur la droite de l'image.
           />
           <span style={{ fontSize: "1.5rem", fontWeight: "bold" }}>
+            {/* Nom du site */}
             MonSite
           </span>
         </Navbar.Brand>
 
+        {/* Bouton pour basculer le menu en petit écran */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="ms-auto" />
+
+        {/* Menus de navigation */}
         <Navbar.Collapse id="basic-navbar-nav">
-          {/* Menus centrés */}
           <Nav className="mx-auto">
+            {" "}
+            {/* Centrage des liens du menu */}
             <Nav.Link as={Link} to="/" className="text-center px-3">
+              {/* Lien vers la page d'accueil */}
               Home
             </Nav.Link>
             <Nav.Link as={Link} to="/about" className="text-center px-3">
+              {/* Lien vers la page About */}
               About
             </Nav.Link>
             <Nav.Link as={Link} to="/service" className="text-center px-3">
+              {/* Lien vers la page Service */}
               Service
             </Nav.Link>
             <Nav.Link as={Link} to="/contact" className="text-center px-3">
+              {/* Lien vers la page Contact */}
               Contact
             </Nav.Link>
           </Nav>
@@ -54,4 +65,5 @@ function BarreNavig() {
   );
 }
 
+// Exportation du composant pour pouvoir l'utiliser dans d'autres fichiers.
 export default BarreNavig;

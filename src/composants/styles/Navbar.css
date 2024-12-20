@@ -64,3 +64,9 @@
     margin-bottom: 10px; /* Espacement entre les liens en mode mobile */
   }
 }
+
+.carousel-item img {
+  width: 100%; /* L'image prend toute la largeur disponible */
+  height: auto; /* Laisse la hauteur s'ajuster proportionnellement */
+  object-fit: contain; /* Assure-toi que l'image soit entièrement visible, sans coupure */
+}

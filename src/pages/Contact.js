@@ -2,118 +2,160 @@ import React, { useState } from "react";
 import { Form, Button, Container } from "react-bootstrap";
 import emailjs from "emailjs-com";
 
-function PageContact() {
+function ContactPage() {
   const [formData, setFormData] = useState({
-    name: "",
+    firstName: "",
+    lastName: "",
     address: "",
     email: "",
     message: "",
   });
 
-  const [isChecked, setIsChecked] = useState(false); // État pour la case RGPD
+  const [isChecked, setIsChecked] = useState(false);
+  const [errors, setErrors] = useState({});
+  const [isSent, setIsSent] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
+    setFormData({ ...formData, [name]: value });
   };
 
   const handleCheckboxChange = (e) => {
     setIsChecked(e.target.checked);
   };
 
+  const validateForm = () => {
+    const newErrors = {};
+
+    if (!formData.firstName.trim())
+      newErrors.firstName = "First name is required.";
+    if (!formData.lastName.trim())
+      newErrors.lastName = "Last name is required.";
+    if (!formData.address.trim())
+      newErrors.address =
+        "Address is required. Example: 123 Main Street, Toronto, ON, Canada.";
+    if (!formData.email.trim() || !/^\S+@\S+\.\S+$/.test(formData.email))
+      newErrors.email = "A valid email address is required.";
+    if (!formData.message.trim()) newErrors.message = "Message is required.";
+
+    if (!isChecked) newErrors.rgpd = "You must accept the privacy policy.";
+
+    return newErrors;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!isChecked) {
-      alert(
-        "Vous devez accepter la politique de confidentialité pour continuer."
-      );
+    const formErrors = validateForm();
+    if (Object.keys(formErrors).length > 0) {
+      setErrors(formErrors);
       return;
     }
 
     emailjs
       .send(
-        "service_65z09m9", // Remplace par ton Service ID EmailJS
-        "template_0atnv1t", // Remplace par ton Template ID EmailJS
-        formData, // Les données du formulaire
-        "3cQRG2gAjc0Cmbs50" // Remplace par ton User ID EmailJS
+        "service_65z09m9",
+        "template_0atnv1t",
+        formData,
+        "3cQRG2gAjc0Cmbs50"
       )
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
-          alert("Votre message a été envoyé avec succès !");
+          setIsSent(true);
+          setErrors({});
           setFormData({
-            name: "",
+            firstName: "",
+            lastName: "",
             address: "",
             email: "",
             message: "",
           });
-          setIsChecked(false); // Réinitialiser la case RGPD
+          setIsChecked(false);
         },
         (err) => {
           console.error("FAILED...", err);
-          alert("Échec de l'envoi. Veuillez réessayer.");
+          alert("Message sending failed. Please try again.");
         }
       );
   };
 
   return (
     <Container className="mt-5">
-      {/* Titre */}
-      <h2 className="text-center">Nous Contacter</h2>
+      <h2 className="text-center">Contact Us</h2>
+      <hr
+        style={{
+          width: "100px",
+          borderTop: "3px solid #007bff",
+          margin: "auto",
+        }}
+      />
 
-      {/* Trait centré */}
-      <div className="d-flex justify-content-center my-3">
-        <hr style={{ width: "100px", borderTop: "3px solid #007bff" }} />
-      </div>
+      {isSent && (
+        <p className="text-success text-center mt-3">
+          Your message has been sent successfully!
+        </p>
+      )}
 
-      {/* Texte descriptif */}
-      <p className="text-center text-muted">
-        Si vous avez des questions ou souhaitez plus d'informations, n'hésitez
-        pas à nous envoyer un message via ce formulaire.
-      </p>
-
-      {/* Formulaire */}
       <Form onSubmit={handleSubmit} className="mt-4">
-        <Form.Group controlId="formName">
-          <Form.Label>Nom</Form.Label>
+        <Form.Group controlId="formFirstName">
+          <Form.Label>First Name</Form.Label>
           <Form.Control
-            size="sm"
             type="text"
-            placeholder="Entrez votre nom complet"
-            name="name"
-            value={formData.name}
+            placeholder="Enter your first name"
+            name="firstName"
+            value={formData.firstName}
             onChange={handleChange}
-            maxLength={50}
+            required
           />
+          {errors.firstName && (
+            <Form.Text className="text-danger">{errors.firstName}</Form.Text>
+          )}
+        </Form.Group>
+
+        <Form.Group controlId="formLastName">
+          <Form.Label>Last Name</Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="Enter your last name"
+            name="lastName"
+            value={formData.lastName}
+            onChange={handleChange}
+            required
+          />
+          {errors.lastName && (
+            <Form.Text className="text-danger">{errors.lastName}</Form.Text>
+          )}
         </Form.Group>
 
         <Form.Group controlId="formAddress">
-          <Form.Label>Adresse</Form.Label>
+          <Form.Label>Address</Form.Label>
           <Form.Control
             type="text"
-            placeholder="123 Rue Principale, Québec, QC"
+            placeholder="123 Main Street, Toronto, ON, Canada"
             name="address"
             value={formData.address}
             onChange={handleChange}
-            maxLength={50}
+            required
           />
+          {errors.address && (
+            <Form.Text className="text-danger">{errors.address}</Form.Text>
+          )}
         </Form.Group>
 
         <Form.Group controlId="formEmail">
           <Form.Label>Email</Form.Label>
           <Form.Control
-            size="sm"
             type="email"
-            placeholder="exemple@domaine.com"
+            placeholder="example@domain.com"
             name="email"
             value={formData.email}
             onChange={handleChange}
-            maxLength={50}
+            required
           />
+          {errors.email && (
+            <Form.Text className="text-danger">{errors.email}</Form.Text>
+          )}
         </Form.Group>
 
         <Form.Group controlId="formMessage">
@@ -121,28 +163,33 @@ function PageContact() {
           <Form.Control
             as="textarea"
             rows={4}
-            placeholder="Votre message ici"
+            placeholder="Write your message here"
             name="message"
             value={formData.message}
             onChange={handleChange}
+            required
           />
+          {errors.message && (
+            <Form.Text className="text-danger">{errors.message}</Form.Text>
+          )}
         </Form.Group>
 
-        {/* RGPD : Case à cocher */}
-        <Form.Group controlId="formCheckbox" className="mt-3">
+        <Form.Group controlId="formRGPD" className="mt-3">
           <Form.Check
             type="checkbox"
-            label="J'accepte la politique de confidentialité"
+            label="I accept the privacy policy"
             checked={isChecked}
             onChange={handleCheckboxChange}
             required
           />
+          {errors.rgpd && (
+            <Form.Text className="text-danger">{errors.rgpd}</Form.Text>
+          )}
         </Form.Group>
 
-        {/* Bouton Soumettre */}
-        <div className="text-center mt-3">
+        <div className="text-center mt-4 mb-5">
           <Button variant="success" type="submit">
-            Soumettre
+            Submit
           </Button>
         </div>
       </Form>
@@ -150,4 +197,4 @@ function PageContact() {
   );
 }
 
-export default PageContact;
+export default ContactPage;

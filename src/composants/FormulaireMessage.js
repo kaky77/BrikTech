@@ -2,142 +2,197 @@ import React, { useState } from "react";
 import { Form, Button, Container } from "react-bootstrap";
 import emailjs from "emailjs-com";
 
-function Formulaire() {
+function ContactForm() {
   const [formData, setFormData] = useState({
-    name: "",
+    firstName: "",
+    lastName: "",
     address: "",
     email: "",
     message: "",
   });
 
-  const [isChecked, setIsChecked] = useState(false); // État pour la case RGPD
+  const [isChecked, setIsChecked] = useState(false); // Privacy Policy
+  const [errors, setErrors] = useState({}); // Errors state
+  const [isSent, setIsSent] = useState(false); // Success state
 
+  // Handle input changes
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  // Validate the form
+  const validateForm = () => {
+    const newErrors = {};
+
+    if (!formData.firstName.trim())
+      newErrors.firstName = "First name is required.";
+    if (!formData.lastName.trim())
+      newErrors.lastName = "Last name is required.";
+    if (!formData.address.trim()) newErrors.address = "Address is required.";
+    if (!formData.email.trim() || !/^\S+@\S+\.\S+$/.test(formData.email))
+      newErrors.email = "A valid email address is required.";
+    if (!formData.message.trim()) newErrors.message = "Message is required.";
+
+    if (!isChecked) newErrors.privacy = "You must accept the privacy policy.";
+
+    return newErrors;
+  };
+
+  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Vérification de la case RGPD
-    if (!isChecked) {
-      alert(
-        "Vous devez accepter la politique de confidentialité pour continuer."
-      );
+    const formErrors = validateForm();
+
+    if (Object.keys(formErrors).length > 0) {
+      setErrors(formErrors);
       return;
     }
 
+    // Sending email using EmailJS
     emailjs
       .send(
-        "service_65z09m9", // Remplace par ton Service ID EmailJS
-        "template_0atnv1t", // Remplace par ton Template ID EmailJS
-        formData, // Les données du formulaire
-        "3cQRG2gAjc0Cmbs50" // Remplace par ton User ID EmailJS
+        "service_thbyfk5", // Service ID
+        "template_ruhrt48", // Template ID
+        formData,
+        "j7ZAbaBm-17rRiIxk" // Public Key
       )
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
-          alert("Votre message a été envoyé avec succès !");
+          setIsSent(true);
+          setErrors({});
           setFormData({
-            name: "",
+            firstName: "",
+            lastName: "",
             address: "",
             email: "",
             message: "",
           });
-          setIsChecked(false); // Réinitialisation de la case RGPD
+          setIsChecked(false);
         },
         (err) => {
           console.error("FAILED...", err);
-          alert("Échec de l'envoi. Veuillez réessayer.");
+          alert("Failed to send the message. Please try again.");
         }
       );
   };
 
   return (
     <Container className="mt-5">
-      {/* Titre */}
-      <h2 className="text-center">Nous Contacter</h2>
+      {/* Title */}
+      <h2 className="text-center">Contact Us</h2>
+      <hr
+        style={{
+          width: "100px",
+          borderTop: "3px solid #007bff",
+          margin: "auto",
+        }}
+      />
 
-      {/* Trait centré */}
-      <div className="d-flex justify-content-center my-3">
-        <hr style={{ width: "100px", borderTop: "3px solid #007bff" }} />
-      </div>
+      {/* Success Message */}
+      {isSent && (
+        <p className="text-success text-center mt-3">
+          Your message has been sent successfully!
+        </p>
+      )}
 
-      {/* Texte descriptif */}
-      <p className="text-center text-muted">
-        Si vous avez des questions ou souhaitez plus d'informations, n'hésitez
-        pas à nous envoyer un message via ce formulaire.
-      </p>
-
-      {/* Formulaire */}
+      {/* Form */}
       <Form onSubmit={handleSubmit} className="mt-4">
-        <Form.Group controlId="formName">
-          <Form.Label>Nom</Form.Label>
+        {/* First Name */}
+        <Form.Group controlId="formFirstName">
+          <Form.Label>First Name</Form.Label>
           <Form.Control
-            size="sm"
             type="text"
-            placeholder="Entrez votre nom complet"
-            name="name"
-            value={formData.name}
-            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-            maxLength={50}
+            placeholder="Enter your first name"
+            name="firstName"
+            value={formData.firstName}
+            onChange={handleChange}
           />
+          {errors.firstName && (
+            <Form.Text className="text-danger">{errors.firstName}</Form.Text>
+          )}
         </Form.Group>
 
-        <Form.Group controlId="formAddress">
-          <Form.Label>Adresse</Form.Label>
+        {/* Last Name */}
+        <Form.Group controlId="formLastName">
+          <Form.Label>Last Name</Form.Label>
           <Form.Control
             type="text"
-            placeholder="123 Rue Principale, Québec, QC"
+            placeholder="Enter your last name"
+            name="lastName"
+            value={formData.lastName}
+            onChange={handleChange}
+          />
+          {errors.lastName && (
+            <Form.Text className="text-danger">{errors.lastName}</Form.Text>
+          )}
+        </Form.Group>
+
+        {/* Address */}
+        <Form.Group controlId="formAddress">
+          <Form.Label>Address</Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="123 Main Street, Toronto, ON, Canada"
             name="address"
             value={formData.address}
-            onChange={(e) =>
-              setFormData({ ...formData, address: e.target.value })
-            }
-            maxLength={50}
+            onChange={handleChange}
           />
+          {errors.address && (
+            <Form.Text className="text-danger">{errors.address}</Form.Text>
+          )}
         </Form.Group>
 
+        {/* Email */}
         <Form.Group controlId="formEmail">
           <Form.Label>Email</Form.Label>
           <Form.Control
-            size="sm"
             type="email"
-            placeholder="exemple@domaine.com"
+            placeholder="Enter your email"
             name="email"
             value={formData.email}
-            onChange={(e) =>
-              setFormData({ ...formData, email: e.target.value })
-            }
-            maxLength={50}
+            onChange={handleChange}
           />
+          {errors.email && (
+            <Form.Text className="text-danger">{errors.email}</Form.Text>
+          )}
         </Form.Group>
 
+        {/* Message */}
         <Form.Group controlId="formMessage">
           <Form.Label>Message</Form.Label>
           <Form.Control
             as="textarea"
             rows={4}
-            placeholder="Votre message ici"
+            placeholder="Write your message here"
             name="message"
             value={formData.message}
-            onChange={(e) =>
-              setFormData({ ...formData, message: e.target.value })
-            }
+            onChange={handleChange}
           />
+          {errors.message && (
+            <Form.Text className="text-danger">{errors.message}</Form.Text>
+          )}
         </Form.Group>
 
-        {/* RGPD : Case à cocher */}
-        <Form.Group controlId="formCheckbox" className="mt-3">
+        {/* Privacy Policy Checkbox */}
+        <Form.Group controlId="formPrivacy" className="mt-3">
           <Form.Check
             type="checkbox"
-            label="J'accepte la politique de confidentialité"
+            label="I accept the privacy policy"
             checked={isChecked}
             onChange={(e) => setIsChecked(e.target.checked)}
-            required
           />
+          {errors.privacy && (
+            <Form.Text className="text-danger">{errors.privacy}</Form.Text>
+          )}
         </Form.Group>
 
-        {/* Bouton Soumettre */}
-        <div className="text-center mt-3">
+        {/* Submit Button */}
+        <div className="text-center mt-4 mb-5">
           <Button variant="success" type="submit">
-            Soumettre
+            Submit
           </Button>
         </div>
       </Form>
@@ -145,4 +200,4 @@ function Formulaire() {
   );
 }
 
-export default Formulaire;
+export default ContactForm;

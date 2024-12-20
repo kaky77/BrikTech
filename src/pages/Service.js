@@ -8,21 +8,19 @@ import Formulaire from "../composants/FormulaireMessage";
 function Service() {
   return (
     <div>
-      <div>
-        {/* Conteneur principal pour les sections */}
-        <div className="container mt-4">
-          {/* Row 1 : Première section */}
-          <div className="row mb-4">
-            <div className="col-12">
-              <div className="section">
-                {/* Image avec effet hover */}
-                <div className="card shadow-sm">
-                  <img
-                    src={image9}
-                    alt="Description de l'image"
-                    className="card-img-top rounded image-hover-effect w-100"
-                  />
-                </div>
+      {/* Conteneur principal pour les sections */}
+      <div className="container mt-4">
+        {/* Row 1 : Première section */}
+        <div className="row mb-4">
+          <div className="col-12">
+            <div className="section">
+              {/* Image avec effet hover */}
+              <div className="card shadow-sm">
+                <img
+                  src={image9}
+                  alt="Description de l'image"
+                  className="card-img-top rounded  w-100"
+                />
               </div>
             </div>
           </div>
@@ -30,15 +28,6 @@ function Service() {
 
         {/* Row 2 : Deuxième section */}
         <div className="row gx-1 mb-4">
-          {/* Colonne pour l'image */}
-          <div className="col-12 col-md-6">
-            <img
-              src={image10}
-              alt="Description de l'image"
-              className="img-fluid rounded image-hover-effect w-100" // Image remplissant la colonne
-            />
-          </div>
-
           {/* Colonne pour le texte */}
           <div className="col-12 col-md-6 d-flex flex-column justify-content-center">
             <div className="section">
@@ -49,6 +38,15 @@ function Service() {
                 explications, ou un contenu détaillé.
               </p>
             </div>
+          </div>
+
+          {/* Colonne pour l'image */}
+          <div className="col-12 col-md-6">
+            <img
+              src={image10}
+              alt="Description de l'image"
+              className="img-fluid rounded image-hover-effect w-100" // Image remplissant la colonne
+            />
           </div>
         </div>
 
@@ -84,11 +82,6 @@ function Service() {
               <Formulaire />
             </div>
           </div>
-        </div>
-
-        {/* Row 5 : Footer */}
-        <div className="row">
-          <div className="col-12"></div>
         </div>
       </div>
     </div>
