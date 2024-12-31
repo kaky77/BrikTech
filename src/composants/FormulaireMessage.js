@@ -60,7 +60,7 @@ function ContactForm() {
       )
       .then(
         (response) => {
-          console.log("SUCCESS!", response.status, response.text);
+          //console.log("SUCCESS!", response.status, response.text);
           setIsSent(true);
           setErrors({});
           setFormData({
@@ -191,7 +191,7 @@ function ContactForm() {
 
         {/* Submit Button */}
         <div className="text-center mt-4 mb-5">
-          <Button variant="success" type="submit">
+          <Button variant="primary" type="submit">
             Submit
           </Button>
         </div>

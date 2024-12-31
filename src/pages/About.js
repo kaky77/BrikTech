@@ -3,28 +3,23 @@ import "../App.css";
 import image6 from "../images/image6.png";
 import image7 from "../images/image7.png";
 import image8 from "../images/image8.png";
-import Formulaire from "../composants/FormulaireMessage";
 
 function About() {
   return (
     <div>
-      <div className="container mt-4">
-        <div className="row mb-4">
-          <div className="col-12">
-            <div className="section">
-              <div className="card shadow-sm">
-                <img
-                  src={image8}
-                  alt="Description de l'image"
-                  className="card-img-top rounded"
-                />
-              </div>
-            </div>
-          </div>
+      <div className="container-fluid">
+      <br /><br />
+        <div className="row">
+          <img
+            src={image8}
+            alt="Description de l'image"
+            style={{ height: "600px" }}
+          />
         </div>
 
-        <div className="row mb-4">
-          <div className="col-12 col-md-6 d-flex align-items-center justify-content-center">
+        <br /><br />
+        <div className="row">
+          <div className="col-12 col-md-6 ">
             <div className="section">
               <h3>Details Article 1</h3>
               <p>
@@ -35,25 +30,28 @@ function About() {
             </div>
           </div>
 
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-md-6 text-center">
             <img
               src={image6}
               alt="Description de l'image"
               className="img-fluid image-hover-effect"
+              style={{ width: "500px", height: "600px" }}
             />
           </div>
         </div>
 
-        <div className="row mb-4">
-          <div className="col-12 col-md-6">
+        <br /><br />
+        <div className="row">
+          <div className="col-12 col-md-6 text-center">
             <img
               src={image7}
               alt="Description de l'image"
               className="img-fluid image-hover-effect"
+              style={{ width: "500px", height: "600px" }}
             />
           </div>
 
-          <div className="col-12 col-md-6 d-flex align-items-center justify-content-center">
+          <div className="col-12 col-md-6 ">
             <div className="section">
               <h3>Details Article 2</h3>
               <p>
@@ -64,14 +62,7 @@ function About() {
             </div>
           </div>
         </div>
-
-        <div className="row mb-4">
-          <div className="col-12">
-            <div className="section">
-              <Formulaire />
-            </div>
-          </div>
-        </div>
+        <br /><br />
       </div>
     </div>
   );

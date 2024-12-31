@@ -1,5 +1,5 @@
 import React from "react";
-import { Carousel } from "react-bootstrap";
+import { Carousel} from "react-bootstrap";
 import image1 from "../images/image1.png";
 import image2 from "../images/image2.png";
 import image3 from "../images/image3.png";
@@ -7,7 +7,7 @@ import "./styles/Navbar.css";
 
 function CarouselImages() {
   return (
-    <Carousel interval={2000}>
+    <Carousel fade pause = {false} controls={false} interval={3000}>
       <Carousel.Item>
         <img
           className="d-block w-100"

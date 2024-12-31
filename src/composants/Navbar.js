@@ -30,7 +30,7 @@ function BarreNavig() {
           />
           <span style={{ fontSize: "1.5rem", fontWeight: "bold" }}>
             {/* Nom du site */}
-            MonSite
+            BrikTech
           </span>
         </Navbar.Brand>
 
@@ -50,9 +50,9 @@ function BarreNavig() {
               {/* Lien vers la page About */}
               About
             </Nav.Link>
-            <Nav.Link as={Link} to="/service" className="text-center px-3">
+            <Nav.Link as={Link} to="/services" className="text-center px-3">
               {/* Lien vers la page Service */}
-              Service
+              Services
             </Nav.Link>
             <Nav.Link as={Link} to="/contact" className="text-center px-3">
               {/* Lien vers la page Contact */}

@@ -49,27 +49,9 @@ body {
   border-radius: 8px;
   background-color: #f8f9fa; /* Couleur pastel claire */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
-.section h3 {
-  color: #343a40; /* Couleur gris foncé */
-  font-weight: bold; /* Texte en gras */
-}
-
-/* Style des images */
-.section img {
-  border-radius: 8px; /* Arrondit les coins des images */
-  width: 100%; /* Les rend responsives */
-  height: auto; /* Maintient les proportions */
-}
-
-/* Style des paragraphes */
-.section p {
-  font-size: 1rem; /* Taille standard pour le texte */
-  line-height: 1.6; /* Augmente l'espace entre les lignes */
-  color: #495057; /* Texte en gris doux */
-}
 
 /* Style du footer */
 footer {
@@ -98,9 +80,3 @@ footer a {
   border-radius: 10px; /* Coins arrondis */
 }
 
-.row {
-  border: 1px solid #ddd; /* Bordure légère autour des lignes */
-  border-radius: 5px; /* Coins arrondis */
-  margin-bottom: 20px; /* Espacement entre les lignes */
-  padding: 20px; /* Espacement interne */
-}
