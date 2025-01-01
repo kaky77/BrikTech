@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/BrikTech/static/css/main.e053d3eb.css",
-    "main.js": "/BrikTech/static/js/main.daaa6e5f.js",
+    "main.js": "/BrikTech/static/js/main.3ab81186.js",
     "static/js/453.adc34edb.chunk.js": "/BrikTech/static/js/453.adc34edb.chunk.js",
     "static/media/fa-solid-900.ttf": "/BrikTech/static/media/fa-solid-900.42c745469c29afbc4e98.ttf",
     "static/media/fa-brands-400.ttf": "/BrikTech/static/media/fa-brands-400.4e755efff9e2ad0cc4ce.ttf",
@@ -25,11 +25,11 @@
     "static/media/fa-v4compatibility.woff2": "/BrikTech/static/media/fa-v4compatibility.eac4dbb6d61d3a73befd.woff2",
     "index.html": "/BrikTech/index.html",
     "main.e053d3eb.css.map": "/BrikTech/static/css/main.e053d3eb.css.map",
-    "main.daaa6e5f.js.map": "/BrikTech/static/js/main.daaa6e5f.js.map",
+    "main.3ab81186.js.map": "/BrikTech/static/js/main.3ab81186.js.map",
     "453.adc34edb.chunk.js.map": "/BrikTech/static/js/453.adc34edb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e053d3eb.css",
-    "static/js/main.daaa6e5f.js"
+    "static/js/main.3ab81186.js"
   ]
 }
