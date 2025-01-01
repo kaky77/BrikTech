@@ -10,7 +10,7 @@ import Stack from "react-bootstrap/Stack";
 
 function Home() {
   return (
-    <div>
+    <div >
       {/* Conteneur principal pour les sections */}
       <div className="container-fluid">
         {/* Row 1 : Première section */}
@@ -41,10 +41,12 @@ function Home() {
                   href="/#"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="text-center flex-fill"
                 >
                   <img
                     src={App_Store}
                     alt="app store"
+                    className="img-fluid"
                     style={{ width: "200px", height: "70px" }}
                   />
                 </a>
@@ -52,10 +54,12 @@ function Home() {
                   href="/#"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="text-center flex-fill"
                 >
                   <img
                     src={Google_Play_Store}
                     alt="google play store"
+                    className="img-fluid"
                     style={{ width: "200px", height: "70px" }}
                   />
                 </a>
@@ -64,10 +68,11 @@ function Home() {
           </div>
 
           {/* Colonne pour l'image N°2 de la page home */}
-          <div className="col-12 col-md-6 text-center">
+          <div className="col-12 col-md-6 text-center ">
             <img
               src={image4} // 4e image
               alt="Description de l'image"
+              className="img-fluid"
               style={{ width: "500px", height: "600px" }}
             />
           </div>
@@ -82,6 +87,7 @@ function Home() {
             <img
               src={image5} // 5e image
               alt="Description de l'image"
+               className="img-fluid"
               style={{ width: "500px", height: "600px" }}
             />
           </div>
@@ -104,10 +110,12 @@ function Home() {
                   href="/#"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="text-center flex-fill"
                 >
                   <img
                     src={App_Store}
                     alt="app store"
+                    className="img-fluid"
                     style={{ width: "200px", height: "70px" }}
                   />
                 </a>
@@ -115,10 +123,12 @@ function Home() {
                   href="/#"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="text-center flex-fill"
                 >
                   <img
                     src={Google_Play_Store}
                     alt="google play store"
+                    className="img-fluid"
                     style={{ width: "200px", height: "70px" }}
                   />
                 </a>

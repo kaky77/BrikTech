@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes,Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Service from "./pages/Service";
@@ -19,6 +19,9 @@ function App() {
           <Route path="/BrikTech/about" element={<About />} />
           <Route path="/BrikTech/services" element={<Service />} />
           <Route path="/BrikTech/contact" element={<Contact />} />
+
+          {/* Rediriger toute route inconnue vers Home */}
+          <Route path="*" element={<Navigate to="/BrikTech/" />} />
         </Routes>
       </div>
 

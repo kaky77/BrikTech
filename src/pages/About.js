@@ -13,6 +13,7 @@ function About() {
           <img
             src={image8}
             alt="Description de l'image"
+            className="img-fluid"
             style={{ height: "600px" }}
           />
         </div>

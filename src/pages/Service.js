@@ -13,6 +13,7 @@ function Service() {
           <img
             src={image9}
             alt="Description de l'image"
+            className="img-fluid"
             style={{ height: "600px" }}
           />
         </div>
