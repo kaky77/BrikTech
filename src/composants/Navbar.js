@@ -19,7 +19,7 @@ function BarreNavig() {
         {/* Logo et nom du site */}
         <Navbar.Brand
           as={Link} // Utilisation de `Link` pour que le logo redirige vers la page d'accueil sans recharger la page.
-          to="/" // Lien vers la route racine "/".
+          to="/BrikTech/" // Lien vers la route racine "/".
           className="mx-auto d-flex justify-content-center align-items-center" // Centrage du logo et du texte horizontalement et verticalement.
         >
           <img
@@ -42,19 +42,19 @@ function BarreNavig() {
           <Nav className="mx-auto">
             {" "}
             {/* Centrage des liens du menu */}
-            <Nav.Link as={Link} to="/" className="text-center px-3">
+            <Nav.Link as={Link} to="/BrikTech/" className="text-center px-3">
               {/* Lien vers la page d'accueil */}
               Home
             </Nav.Link>
-            <Nav.Link as={Link} to="/about" className="text-center px-3">
+            <Nav.Link as={Link} to="/BrikTech/about" className="text-center px-3">
               {/* Lien vers la page About */}
               About
             </Nav.Link>
-            <Nav.Link as={Link} to="/services" className="text-center px-3">
+            <Nav.Link as={Link} to="/BrikTech/services" className="text-center px-3">
               {/* Lien vers la page Service */}
               Services
             </Nav.Link>
-            <Nav.Link as={Link} to="/contact" className="text-center px-3">
+            <Nav.Link as={Link} to="/BrikTech/contact" className="text-center px-3">
               {/* Lien vers la page Contact */}
               Contact
             </Nav.Link>

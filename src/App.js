@@ -15,10 +15,10 @@ function App() {
       {/* Contenu dynamique selon la route */}
       <div className="content">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Service />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/BrikTech/" element={<Home />} />
+          <Route path="/BrikTech/about" element={<About />} />
+          <Route path="/BrikTech/services" element={<Service />} />
+          <Route path="/BrikTech/contact" element={<Contact />} />
         </Routes>
       </div>
 

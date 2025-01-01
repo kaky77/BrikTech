@@ -22,16 +22,16 @@ function Footer() {
             <h5>Liens rapides</h5>
             <ul className="list-unstyled">
               <li>
-                <Link to="/">Accueil</Link>
+                <Link to="/BrikTech/">Accueil</Link>
               </li>
               <li>
-                <Link to="/about">À propos</Link>
+                <Link to="/BrikTech/about">À propos</Link>
               </li>
               <li>
-                <Link to="/services">Services</Link>
+                <Link to="/BrikTech/services">Services</Link>
               </li>
               <li>
-                <Link to="/contact">Contact</Link>
+                <Link to="/BrikTech/contact">Contact</Link>
               </li>
             </ul>
           </div>
