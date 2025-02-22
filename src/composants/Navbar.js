@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"; // Importation du composant `Link` pour
 import Container from "react-bootstrap/Container"; // Conteneur de Bootstrap pour une mise en page responsive.
 import Nav from "react-bootstrap/Nav"; // Composant `Nav` de Bootstrap pour gérer les liens de navigation.
 import Navbar from "react-bootstrap/Navbar"; // Barre de navigation Bootstrap.
-import logo from "../images/logo.png"; // Importation du fichier d'image pour le logo.
+import logo from "../images/logo1.jpg"; // Importation du fichier d'image pour le logo.
 import "./styles/Navbar.css"; // Importation des styles personnalisés pour la barre de navigation.
 
 function BarreNavig() {
