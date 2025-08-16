@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3ebc64dd751b2daaa9c76ffe687bce47",
+    "revision": "9c756f58385d56d2dc06b4acdd92d861",
     "url": "/BrikTech/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/BrikTech/static/css/2.0be161e8.chunk.css"
   },
   {
-    "revision": "79ce7689d4a497163731",
+    "revision": "0ce95979df15c3d0d61b",
     "url": "/BrikTech/static/css/main.12284b2c.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/BrikTech/static/js/3.a55009c7.chunk.js"
   },
   {
-    "revision": "79ce7689d4a497163731",
-    "url": "/BrikTech/static/js/main.dba47adb.chunk.js"
+    "revision": "0ce95979df15c3d0d61b",
+    "url": "/BrikTech/static/js/main.5440a869.chunk.js"
   },
   {
     "revision": "42cc3e24808b320821c6",
