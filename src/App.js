@@ -39,3 +39,4 @@ function App() {
 }
 
 export default App;
+// set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start
