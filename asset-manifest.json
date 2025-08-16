@@ -1,25 +1,28 @@
 {
   "files": {
-    "main.css": "/BrikTech/static/css/main.d54043b6.css",
-    "main.js": "/BrikTech/static/js/main.85daa440.js",
-    "static/js/453.adc34edb.chunk.js": "/BrikTech/static/js/453.adc34edb.chunk.js",
-    "static/media/Main_page.jpg": "/BrikTech/static/media/Main_page.4968e3840abda181119c.jpg",
-    "static/media/fa-solid-900.ttf": "/BrikTech/static/media/fa-solid-900.42c745469c29afbc4e98.ttf",
-    "static/media/fa-brands-400.ttf": "/BrikTech/static/media/fa-brands-400.4e755efff9e2ad0cc4ce.ttf",
-    "static/media/fa-solid-900.woff2": "/BrikTech/static/media/fa-solid-900.a4453cdb966b98ed8801.woff2",
-    "static/media/fa-brands-400.woff2": "/BrikTech/static/media/fa-brands-400.265683c169acc4399fe4.woff2",
-    "static/media/fa-regular-400.ttf": "/BrikTech/static/media/fa-regular-400.fca1ba8756e66eb24cc3.ttf",
-    "static/media/fa-regular-400.woff2": "/BrikTech/static/media/fa-regular-400.1bb9d91b4e86ea5158e6.woff2",
-    "static/media/fa-v4compatibility.ttf": "/BrikTech/static/media/fa-v4compatibility.c230767394a35143968f.ttf",
-    "static/media/logo1.jpg": "/BrikTech/static/media/logo1.a0acb92066accade7dbd.jpg",
-    "static/media/fa-v4compatibility.woff2": "/BrikTech/static/media/fa-v4compatibility.eac4dbb6d61d3a73befd.woff2",
+    "main.css": "/BrikTech/static/css/main.12284b2c.chunk.css",
+    "main.js": "/BrikTech/static/js/main.dba47adb.chunk.js",
+    "main.js.map": "/BrikTech/static/js/main.dba47adb.chunk.js.map",
+    "runtime~main.js": "/BrikTech/static/js/runtime~main.c68d4b3f.js",
+    "runtime~main.js.map": "/BrikTech/static/js/runtime~main.c68d4b3f.js.map",
+    "static/css/2.0be161e8.chunk.css": "/BrikTech/static/css/2.0be161e8.chunk.css",
+    "static/js/2.b483f128.chunk.js": "/BrikTech/static/js/2.b483f128.chunk.js",
+    "static/js/2.b483f128.chunk.js.map": "/BrikTech/static/js/2.b483f128.chunk.js.map",
+    "static/js/3.a55009c7.chunk.js": "/BrikTech/static/js/3.a55009c7.chunk.js",
+    "static/js/3.a55009c7.chunk.js.map": "/BrikTech/static/js/3.a55009c7.chunk.js.map",
     "index.html": "/BrikTech/index.html",
-    "main.d54043b6.css.map": "/BrikTech/static/css/main.d54043b6.css.map",
-    "main.85daa440.js.map": "/BrikTech/static/js/main.85daa440.js.map",
-    "453.adc34edb.chunk.js.map": "/BrikTech/static/js/453.adc34edb.chunk.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.d54043b6.css",
-    "static/js/main.85daa440.js"
-  ]
+    "precache-manifest.ec18fdc114a25c9d27a7f56ea3eef889.js": "/BrikTech/precache-manifest.ec18fdc114a25c9d27a7f56ea3eef889.js",
+    "service-worker.js": "/BrikTech/service-worker.js",
+    "static/css/2.0be161e8.chunk.css.map": "/BrikTech/static/css/2.0be161e8.chunk.css.map",
+    "static/css/main.12284b2c.chunk.css.map": "/BrikTech/static/css/main.12284b2c.chunk.css.map",
+    "static/media/App_Store.png": "/BrikTech/static/media/App_Store.097a1b32.png",
+    "static/media/Google_Play_Store.webp": "/BrikTech/static/media/Google_Play_Store.2b68356d.webp",
+    "static/media/all.min.css": "/BrikTech/static/media/fa-v4compatibility.a772da7b.woff2",
+    "static/media/game.jpg": "/BrikTech/static/media/game.fa56f3e7.jpg",
+    "static/media/imagebriktech.jpg": "/BrikTech/static/media/imagebriktech.255764fc.jpg",
+    "static/media/job.jpg": "/BrikTech/static/media/job.ea7f3971.jpg",
+    "static/media/play.jpg": "/BrikTech/static/media/play.90cc5f99.jpg",
+    "static/media/video-game-.jpg": "/BrikTech/static/media/video-game-.61cf0217.jpg",
+    "static/media/woman.jpg": "/BrikTech/static/media/woman.ac3166ba.jpg"
+  }
 }

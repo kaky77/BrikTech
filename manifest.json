@@ -1,6 +1,6 @@
 {
-  "short_name": "BrikTech",
-  "name": "BrikTech Technologies immersives Corp.",
+  "short_name": "𝑩𝒓𝒊𝒌𝑻𝒆𝒄𝒉",
+  "name": "𝑩𝒓𝒊𝒌𝑻𝒆𝒄𝒉",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,7 +8,7 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo.png",
+      "src": "logo192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
