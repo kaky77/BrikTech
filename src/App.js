@@ -22,14 +22,14 @@ function App() {
       <BarreNavig />
       <div className="content">
         <Routes>
-          <Route path="/BrikTech/" element={<Home />} />
-          <Route path="/BrikTech/about" element={<About />} />
-          <Route path="/BrikTech/services" element={<Service />} />
-          <Route path="/BrikTech/contact" element={<Contact />} />
-          <Route path="/BrikTech/privacy" element={<Privacy />} />
-          <Route path="/BrikTech/terms" element={<Terms />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Service />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
 
-          <Route path="*" element={<Navigate to="/BrikTech/" />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>
 
