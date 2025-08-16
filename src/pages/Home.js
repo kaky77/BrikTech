@@ -1,20 +1,22 @@
 import React from "react";
-import "../App.css"; // import du fichier CSS pour les styles globaux
 import CarouselImages from "../composants/Carousel"; // import du composant carousel
-import image4 from "../images/image4.png"; // import des images
-import image5 from "../images/image5.png";
+import image4 from "../images/play.jpg"; // import des images
 import App_Store from "../images/App_Store.png";
 import Google_Play_Store from "../images/Google_Play_Store.webp";
 import Formulaire from "../composants/FormulaireMessage"; // import du formulaire sendMessage
 import Stack from "react-bootstrap/Stack";
+import "../composants/styles/Style.css";
+import Image from 'react-bootstrap/Image';
+
 
 function Home() {
   return (
-    <div >
+    <div>
       {/* Conteneur principal pour les sections */}
       <div className="container-fluid">
         {/* Row 1 : Première section */}
-        <br /><br />
+        <br />
+        <br />
         <div className="row">
           <CarouselImages />
         </div>
@@ -26,11 +28,10 @@ function Home() {
           {/* Colonne pour le texte (centré) */}
           <div className="col-12 col-md-6">
             <div className="section">
-              <h3>Details Article 1</h3>
+              <h1>𝐊𝐚𝐫𝐦𝐚</h1>
               <p>
-                Ceci est un texte descriptif pour la deuxième section. Utilise
-                cette colonne pour insérer des informations importantes, des
-                explications, ou un contenu détaillé.
+                In Karma, slide, jump, dodge, and race towards victory! Escape enemies embodying demons and negative emotions in an endless race of 
+                fate. Ready to defy destiny and master the chaos? Your fate is in your hands!
               </p>
               <Stack
                 className="justify-content-center"
@@ -64,76 +65,19 @@ function Home() {
                   />
                 </a>
               </Stack>
+
             </div>
           </div>
 
           {/* Colonne pour l'image N°2 de la page home */}
           <div className="col-12 col-md-6 text-center ">
-            <img
-              src={image4} // 4e image
-              alt="Description de l'image"
-              className="img-fluid"
-              style={{ width: "500px", height: "600px" }}
+            <Image 
+            src={image4}
+            alt="Description"
+            className="img-fluid"
+            rounded
+            style={{ width: "400px", height: "500px" }}
             />
-          </div>
-        </div>
-
-        {/* Row 3 : Troisième section */}
-        <br />
-        <br />
-        <div className="row">
-          {/* Colonne pour l'image */}
-          <div className="col-12 col-md-6 text-center">
-            <img
-              src={image5} // 5e image
-              alt="Description de l'image"
-               className="img-fluid"
-              style={{ width: "500px", height: "600px" }}
-            />
-          </div>
-
-          {/* Colonne pour le texte (centré) */}
-          <div className="col-12 col-md-6">
-            <div className="section">
-              <h3>Details Article 2</h3>
-              <p>
-                Ceci est un texte descriptif pour la troisième section. Utilise
-                cette colonne pour insérer des informations importantes, des
-                explications, ou un contenu détaillé.
-              </p>
-              <Stack
-                className="justify-content-center"
-                direction="horizontal"
-                gap={5}
-              >
-                <a
-                  href="/#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-center flex-fill"
-                >
-                  <img
-                    src={App_Store}
-                    alt="app store"
-                    className="img-fluid"
-                    style={{ width: "200px", height: "70px" }}
-                  />
-                </a>
-                <a
-                  href="/#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-center flex-fill"
-                >
-                  <img
-                    src={Google_Play_Store}
-                    alt="google play store"
-                    className="img-fluid"
-                    style={{ width: "200px", height: "70px" }}
-                  />
-                </a>
-              </Stack>
-            </div>
           </div>
         </div>
 

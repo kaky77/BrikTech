@@ -1,8 +1,8 @@
 import React from "react";
 import "../App.css";
-import image6 from "../images/image6.png";
-import image7 from "../images/image7.png";
-import image8 from "../images/image8.png";
+import image6 from "../images/woman.jpg";
+import image8 from "../images/imagebriktech.jpg";
+import Image from 'react-bootstrap/Image';
 
 function About() {
   return (
@@ -12,7 +12,7 @@ function About() {
         <div className="row">
           <img
             src={image8}
-            alt="Description de l'image"
+            alt="Description"
             className="img-fluid"
             style={{ height: "600px" }}
           />
@@ -22,47 +22,25 @@ function About() {
         <div className="row">
           <div className="col-12 col-md-6 ">
             <div className="section">
-              <h3>Details Article 1</h3>
+              <h1>𝑩𝒓𝒊𝒌𝑻𝒆𝒄𝒉</h1>
               <p>
-                Ceci est un texte descriptif pour la deuxième section. Utilise
-                cette colonne pour insérer des informations importantes, des
-                explications, ou un contenu détaillé.
+               BrikTech is a dynamic young Canadian company, born from the passion of creators, developers, engineers, and marketing specialists.
+              Our mission is to push the boundaries of digital creativity by crafting immersive video games, innovative applications, and AI-powered solutions.
               </p>
             </div>
           </div>
 
           <div className="col-12 col-md-6 text-center">
-            <img
+            <Image 
               src={image6}
-              alt="Description de l'image"
-              className="img-fluid image-hover-effect"
-              style={{ width: "500px", height: "600px" }}
+              alt="Description"
+              className="img-fluid "
+              rounded
+              style={{ width: "400px", height: "500px" }}
             />
           </div>
         </div>
-
-        <br /><br />
-        <div className="row">
-          <div className="col-12 col-md-6 text-center">
-            <img
-              src={image7}
-              alt="Description de l'image"
-              className="img-fluid image-hover-effect"
-              style={{ width: "500px", height: "600px" }}
-            />
-          </div>
-
-          <div className="col-12 col-md-6 ">
-            <div className="section">
-              <h3>Details Article 2</h3>
-              <p>
-                Ceci est un texte descriptif pour la troisième section. Utilise
-                cette colonne pour insérer des informations importantes, des
-                explications, ou un contenu détaillé.
-              </p>
-            </div>
-          </div>
-        </div>
+       
         <br /><br />
       </div>
     </div>

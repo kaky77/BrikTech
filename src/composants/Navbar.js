@@ -4,14 +4,13 @@ import { Link } from "react-router-dom"; // Importation du composant `Link` pour
 import Container from "react-bootstrap/Container"; // Conteneur de Bootstrap pour une mise en page responsive.
 import Nav from "react-bootstrap/Nav"; // Composant `Nav` de Bootstrap pour gérer les liens de navigation.
 import Navbar from "react-bootstrap/Navbar"; // Barre de navigation Bootstrap.
-import logo from "../images/logo1.jpg"; // Importation du fichier d'image pour le logo.
+import logo from "../images/logo.png"; // Importation du fichier d'image pour le logo.
 import "./styles/Navbar.css"; // Importation des styles personnalisés pour la barre de navigation.
 
 function BarreNavig() {
   return (
     // Barre de navigation principale
     <Navbar
-      bg="light" // Fond clair.
       expand="lg" // Barre de navigation extensible en grand écran (large).
       className="py-3 border-bottom shadow-sm fixed-top" // Classes CSS pour le padding, la bordure, l'ombre et un positionnement fixe en haut de la page.
     >
@@ -25,12 +24,10 @@ function BarreNavig() {
           <img
             src={logo} // Source de l'image pour le logo.
             alt="Logo" // Texte alternatif pour l'image (accessibilité).
-            style={{ height: "60px" }} // Style inline pour définir une hauteur de 60px.
-            className="me-2" // Marges sur la droite de l'image.
           />
-          <span style={{ fontSize: "1.5rem", fontWeight: "bold" }}>
+          <span className="marque">
             {/* Nom du site */}
-            BrikTech
+            𝑩𝒓𝒊𝒌𝑻𝒆𝒄𝒉
           </span>
         </Navbar.Brand>
 

@@ -82,11 +82,11 @@ function ContactForm() {
   return (
     <Container className="mt-5">
       {/* Title */}
-      <h2 className="text-center">Contact Us</h2>
+      <h1 className="text-center">Contact Us</h1>
       <hr
         style={{
-          width: "100px",
-          borderTop: "3px solid #007bff",
+          width: "200px",
+          borderTop: "5px solid #d99c18",
           margin: "auto",
         }}
       />

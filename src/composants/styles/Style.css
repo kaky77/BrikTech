@@ -1,0 +1,42 @@
+
+.row .section {
+  background-color: #b9e5fb;
+}
+
+
+.privacy-policy {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.privacy-policy h1 {
+  font-size: 2.2rem;
+  color: #0b94d9;
+  margin-bottom: 1rem;
+}
+
+.privacy-policy h2 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: #0b94d9;
+}
+
+.privacy-policy p {
+  margin-bottom: 1rem;
+}
+
+.privacy-policy ul {
+  list-style: none;
+  padding-left: 1.2rem;
+}
+
+.privacy-policy ul li {
+  margin-bottom: 0.5rem;
+}

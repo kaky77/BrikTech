@@ -1,9 +1,8 @@
 import React from "react";
 import { Carousel} from "react-bootstrap";
-import image1 from "../images/image1.png";
-import image2 from "../images/image2.png";
-import image3 from "../images/image3.png";
-import "./styles/Navbar.css";
+import image1 from "../images/imagebriktech.jpg";
+import image2 from "../images/game.jpg";
+import image3 from "../images/job.jpg";
 
 function CarouselImages() {
   return (
@@ -12,11 +11,14 @@ function CarouselImages() {
         <img
           className="d-block w-100"
           src={image1} // 1ère image
-          alt="Premiere images"
+          alt="BrikTech"
         />
         <Carousel.Caption>
-          <h3> description du 1er article</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h1>𝑩𝒓𝒊𝒌𝑻𝒆𝒄𝒉</h1>
+          <p>
+            Based in the heart of Canada, BrikTech blends technology, design, and storytelling to craft games that leave a lasting impression.
+            Our mission: bring unique worlds to life, spark imagination, and become a key player in the gaming industry.
+          </p>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -24,11 +26,14 @@ function CarouselImages() {
         <img
           className="d-block w-100"
           src={image2} // 2ème image
-          alt="Deuxieme images"
+          alt="Karma"
         />
         <Carousel.Caption>
-          <h3>Description de l'article 2</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h1>𝐊𝐚𝐫𝐦𝐚</h1>
+          <p>
+            Explore a mysterious world, face the consequences of your choices, and uncover multiple possible endings.
+            Follow your instincts… but remember: karma never forgets.
+          </p>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -36,12 +41,13 @@ function CarouselImages() {
         <img
           className="d-block w-100"
           src={image3} //  3ème image
-          alt="Troisieme images"
+          alt="Teams"
         />
         <Carousel.Caption>
-          <h3>Description de l'article 3</h3>
+          <h1>𝐓𝐞𝐚𝐦</h1>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            Behind BrikTech is a young, passionate, and bold team.
+            Creators, coders, engineers, marketers, dreamers — we push boundaries to turn every idea into an unforgettable experience.
           </p>
         </Carousel.Caption>
       </Carousel.Item>

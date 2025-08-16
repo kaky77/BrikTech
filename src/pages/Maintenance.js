@@ -1,3 +1,4 @@
+import React from 'react';
 import BarreNavig from "../composants/Navbar";
 import MaintenanceImage from "../images/Main_page.jpg";
 

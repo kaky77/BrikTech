@@ -9,23 +9,22 @@ function Footer() {
         <div className="row">
           {/* Section 1 : Informations sur l'entreprise */}
           <div className="col-12 col-md-4">
-            <h5>À propos</h5>
+            <h1>𝑩𝒓𝒊𝒌𝑻𝒆𝒄𝒉</h1>
             <p>
-              Mon Site Web est dédié à fournir les meilleurs services dans le
-              domaine X. Nous nous engageons à offrir une qualité supérieure et
-              une satisfaction client garantie.
+              BrikTech is a dynamic young Canadian company, born from the passion of creators, developers, engineers, and marketing specialists.
+              Our mission is to push the boundaries of digital creativity by crafting immersive video games, innovative applications, and AI-powered solutions.
             </p>
           </div>
 
           {/* Section 2 : Liens rapides */}
           <div className="col-12 col-md-4">
-            <h5>Liens rapides</h5>
+            <h5>Useful Links</h5>
             <ul className="list-unstyled">
               <li>
-                <Link to="/BrikTech/">Accueil</Link>
+                <Link to="/BrikTech/">Home</Link>
               </li>
               <li>
-                <Link to="/BrikTech/about">À propos</Link>
+                <Link to="/BrikTech/about">About</Link>
               </li>
               <li>
                 <Link to="/BrikTech/services">Services</Link>
@@ -38,36 +37,42 @@ function Footer() {
 
           {/* Section 3 : Réseaux sociaux */}
           <div className="col-12 col-md-4">
-            <h5>Suivez-nous</h5>
-            <p>Retrouvez-nous sur nos réseaux sociaux :</p>
+            <h5>Follow us</h5>
             <div className="social-links">
               <a
-                href="https://facebook.com"
+                href="/#"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-facebook"></i>
+                <i className="fab fa-facebook-f"></i>
               </a>
               <a
-                href="https://twitter.com"
+                href="/#"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-twitter"></i>
+                <i className="fab fa-youtube"></i>
               </a>
               <a
-                href="https://linkedin.com"
+                href="/#"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="fab fa-linkedin"></i>
               </a>
               <a
-                href="https://instagram.com"
+                href="/#"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="fab fa-instagram"></i>
+              </a>
+              <a
+                href="/#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-tiktok"></i>
               </a>
             </div>
           </div>
@@ -75,7 +80,14 @@ function Footer() {
 
         <hr />
         <div className="text-center">
-          <p>&copy; 2024 Mon Site Web. Tous droits réservés.</p>
+          <p>COPYRIGHT © 2025 𝑩𝒓𝒊𝒌𝑻𝒆𝒄𝒉, all rights reserved.</p>
+          <h5>Legal</h5>
+          <p>
+            <Link to="/BrikTech/privacy">Privacy Policy</Link>
+          </p>
+          <p>
+            <Link to="/BrikTech/terms">Terms and Conditions</Link>
+          </p>
         </div>
       </div>
     </footer>
