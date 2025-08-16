@@ -18,18 +18,18 @@ import Terms from "./pages/Terms";
 
 function App() {
   return (
-    <Router basename="/BrikTech">
+    <Router>
       <BarreNavig />
       <div className="content">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Service />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/privacy" element={<Privacy />} />
-          <Route path="/terms" element={<Terms />} />
+          <Route path="/BrikTech/" element={<Home />} />
+          <Route path="/BrikTech/about" element={<About />} />
+          <Route path="/BrikTech/services" element={<Service />} />
+          <Route path="/BrikTech/contact" element={<Contact />} />
+          <Route path="/BrikTech/privacy" element={<Privacy />} />
+          <Route path="/BrikTech/terms" element={<Terms />} />
 
-          <Route path="*" element={<Navigate to="/" />} />
+          <Route path="*" element={<Navigate to="/BrikTech/" />} />
         </Routes>
       </div>
 
