@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5e5e021b2e6ea0b720005415f6186d2a",
+    "revision": "76d08825d1f9348ebb3441c457b03161",
     "url": "/BrikTech/index.html"
   },
   {
-    "revision": "27da2a2e58c1eb006a04",
+    "revision": "7f29782ae9e92c923d2f",
     "url": "/BrikTech/static/css/2.0be161e8.chunk.css"
   },
   {
-    "revision": "de685731e46c4d09511a",
+    "revision": "5dfd25b1c18828739acb",
     "url": "/BrikTech/static/css/main.12284b2c.chunk.css"
   },
   {
-    "revision": "27da2a2e58c1eb006a04",
-    "url": "/BrikTech/static/js/2.b483f128.chunk.js"
+    "revision": "7f29782ae9e92c923d2f",
+    "url": "/BrikTech/static/js/2.4dcbdd12.chunk.js"
   },
   {
     "revision": "8d1aa9f62f0e9bb87230",
     "url": "/BrikTech/static/js/3.a55009c7.chunk.js"
   },
   {
-    "revision": "de685731e46c4d09511a",
-    "url": "/BrikTech/static/js/main.28812bcb.chunk.js"
+    "revision": "5dfd25b1c18828739acb",
+    "url": "/BrikTech/static/js/main.7693e3a3.chunk.js"
   },
   {
     "revision": "42cc3e24808b320821c6",

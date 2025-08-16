@@ -39,19 +39,19 @@ function BarreNavig() {
           <Nav className="mx-auto">
             {" "}
             {/* Centrage des liens du menu */}
-            <Nav.Link as={Link} to="/BrikTech/" className="text-center px-3">
+            <Nav.Link as={Link} to="/" className="text-center px-3">
               {/* Lien vers la page d'accueil */}
               Home
             </Nav.Link>
-            <Nav.Link as={Link} to="/BrikTech/about" className="text-center px-3">
+            <Nav.Link as={Link} to="/about" className="text-center px-3">
               {/* Lien vers la page About */}
               About
             </Nav.Link>
-            <Nav.Link as={Link} to="/BrikTech/services" className="text-center px-3">
+            <Nav.Link as={Link} to="/services" className="text-center px-3">
               {/* Lien vers la page Service */}
               Services
             </Nav.Link>
-            <Nav.Link as={Link} to="/BrikTech/contact" className="text-center px-3">
+            <Nav.Link as={Link} to="/contact" className="text-center px-3">
               {/* Lien vers la page Contact */}
               Contact
             </Nav.Link>
