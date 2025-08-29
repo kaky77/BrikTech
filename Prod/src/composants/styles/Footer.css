@@ -1,0 +1,28 @@
+/* Style général du footer */
+.footer {
+  background-color: #283b8c; /* Couleur de fond professionnelle */
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+/* Liens rapides : couleur et effet au survol */
+.footer a {
+  color: #ecf0f1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+
+/* Social links : icônes espacées et effet au survol */
+.social-links a {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+
+/* Ligne de séparation */
+.footer hr {
+  border-color: rgba(255, 255, 255, 0.2); /* Couleur subtile */
+  margin: 20px 0;
+}
+
