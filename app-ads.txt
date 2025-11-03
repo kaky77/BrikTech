@@ -1,0 +1,14 @@
+# Google AdMob
+google.com, pub-1931416034263359, DIRECT, f08c47fec0942fa0
+
+# Unity Ads (Android)
+unity.com, 5883237, DIRECT, 96cabb5fbdde37a7
+
+# Unity Ads (iOS)
+unity.com, 5883236, DIRECT, 96cabb5fbdde37a7
+
+# ironSource (Android)
+ironsrc.com, 228349e75, DIRECT, a6eb7d9472b32e47
+
+# ironSource (iOS)
+ironsrc.com, 22867a20d, DIRECT, a6eb7d9472b32e47
