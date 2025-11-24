@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f477241361703ce286f0478682c84650",
+    "revision": "fe7b2189a20935b7a8d8295573ac3aa6",
     "url": "/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.19b4ded1.chunk.css"
   },
   {
-    "revision": "a0fb16f3fbec80e624ff",
+    "revision": "638e2dd35435231e3b09",
     "url": "/static/css/main.12284b2c.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/3.2d705904.chunk.js"
   },
   {
-    "revision": "a0fb16f3fbec80e624ff",
-    "url": "/static/js/main.b7cc7f98.chunk.js"
+    "revision": "638e2dd35435231e3b09",
+    "url": "/static/js/main.deb4d0b0.chunk.js"
   },
   {
     "revision": "40bfd4770f1d11771eb1",
@@ -32,24 +32,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/App_Store.097a1b32.png"
   },
   {
-    "revision": "09564cd1cec7e94cc13fa7c9afe7c9e6",
-    "url": "/static/media/Back_compagnie.09564cd1.jpg"
+    "revision": "c9cf6b7084df6c117db7394ad150d291",
+    "url": "/static/media/Back_compagnie.c9cf6b70.jpg"
   },
   {
-    "revision": "5ee193d64b641d95b268845be3846a94",
-    "url": "/static/media/Back_equipe.5ee193d6.jpg"
+    "revision": "c0e398352a7908b9e7c666753d67a857",
+    "url": "/static/media/Back_equipe.c0e39835.jpg"
   },
   {
-    "revision": "d545707da876136fa11943938e919e55",
-    "url": "/static/media/Back_jeux.d545707d.jpg"
+    "revision": "e64a820c3a68bac32aa4107e776d890f",
+    "url": "/static/media/Back_jeux.e64a820c.jpg"
   },
   {
     "revision": "2b68356d45d925d7195f2cc1c7acfe81",
     "url": "/static/media/Google_Play_Store.2b68356d.webp"
   },
   {
-    "revision": "b70ad836937e2ef3973205e078fcfeca",
-    "url": "/static/media/Karma2.b70ad836.jpg"
+    "revision": "7010a6d4bf65019fe60ae98cd049a4b3",
+    "url": "/static/media/Karma2.7010a6d4.jpg"
   },
   {
     "revision": "8719be933b5c7a9617b66fa6373a76d5",
