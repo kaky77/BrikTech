@@ -39,40 +39,13 @@ function Footer() {
           <div className="col-12 col-md-4">
             <h5>Follow us</h5>
             <div className="social-links">
+             
               <a
-                href="/#"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fab fa-facebook-f"></i>
-              </a>
-              <a
-                href="/#"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fab fa-youtube"></i>
-              </a>
-              <a
-                href="/#"
+                href="https://www.linkedin.com/company/108552457/admin/dashboard/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="fab fa-linkedin"></i>
-              </a>
-              <a
-                href="/#"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fab fa-instagram"></i>
-              </a>
-              <a
-                href="/#"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fab fa-tiktok"></i>
               </a>
             </div>
           </div>

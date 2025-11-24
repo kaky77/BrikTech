@@ -59,7 +59,7 @@ function Home() {
                 gap={5}
               >
                 <a
-                  href="/#"
+                  href="https://apps.apple.com/ca/app/karma-game/id6754995646"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-center flex-fill"
@@ -72,7 +72,7 @@ function Home() {
                   />
                 </a>
                 <a
-                  href="/#"
+                  href="https://play.google.com/store/apps/details?id=com.Briktech.Karma"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-center flex-fill"
